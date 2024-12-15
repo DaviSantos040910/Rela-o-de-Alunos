@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Relação de Alunos</title>
+    	<link href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+  <body>
+    <div class="container ">
+ 		<h1>Inserir Aluno<span class="glyphicon glyphicon-education" style="color: red; margin-left: 5px;"></span></h1>
+ 		<form class="form-horizontal">
+ 			<div class="form-group">
+    			<label for="inputMatricula" class="col-md-1">Matrícula</label>
+    			<div class="col-md-6">
+      				<input type="text" class="form-control" id="inputMatricula" placeholder="Digite a matrícula do aluno">
+    			</div>
+  			</div>
+  			<div class="form-group">
+    			<label for="inputNome" class="col-md-1">Nome</label>
+    			<div class="col-md-6">
+      				<input type="text" class="form-control" id="inputNome" placeholder="Digite o Nome do aluno">
+    			</div>
+  			</div>
+  			<div class="form-group">
+    			<label for="inputTel" class="col-md-1">Telefone</label>
+    			<div class="col-md-6">
+      				<input type="tel" class="form-control" id="inputTel" placeholder="Digite o Telefone do aluno">
+    			</div>
+  			</div>
+  			<div class="form-group">
+    			<label for="inputNas" class="col-md-1">Data de Nascimento</label>
+    			<div class="col-md-2">
+      				<input type="date" class="form-control" id="inputNas">
+    			</div>
+    			<label for="inputSex" class="col-md-1 col-md-offset-1 control-label">Sexo</label>
+    			<div class="radio col-md-4">
+	  				<label>
+	    				<input type="radio" name="sex" id="sexo" value="M" checked="">
+	    				Masculino
+	  				</label>
+	  				<label>
+	    				<input type="radio" name="sex" id="sexo" value="F">
+	    				Feminino
+	  				</label>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-danger" onclick="registrar"><span class="glyphicon glyphicon-erase"></span>Limpar</button>
+			<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>Inserir</button>			
+		</form>
+		<h3 class="col-md-7">Relação de Alunos Matrículados<span class="glyphicon glyphicon-list-alt" style="color:red;"></span></h3>
+		<div class="col-md-7 table-responsive">
+		<table class="table">
+			<tr style="background-color: #CAE1FF; ">
+				<th>Matrícula</th>
+				<th>Nome</th>
+				<th>Sexo</th>
+				<th>Data de Nascimento</th>
+				<th>Opções</th>
+			</tr>
+			<tr>
+				<td>2015.1TII0070</td>
+				<td>Davi de Sousa Santos</td>
+				<td>Masculino</td>
+				<td>09/03/200</td>
+				<td><a href=""><span class="glyphicon glyphicon-pencil" style="color: purple;" title="Inserir"></span></a><a href=""><span class="glyphicon glyphicon-remove" style="margin-left: 10px;color: red;" title="Remover"></span></a></td>
+			</tr>
+			<tr>
+				<td>2015.1TII0070</td>
+				<td>Davi de Sousa Santos</td>
+				<td>Masculino</td>
+				<td>09/03/200</td>
+				<td><a href=""><span class="glyphicon glyphicon-pencil" style="color: purple;" title="Inserir"></span></a><a href=""><span class="glyphicon glyphicon-remove" style="margin-left: 10px;color: red;" title="Remover"></span></a></td>
+			</tr>
+			<tr>
+				<td>2015.1TII0070</td>
+				<td>Davi de Sousa Santos</td>
+				<td>Masculino</td>
+				<td>09/03/200</td>
+				<td><a href=""><span class="glyphicon glyphicon-pencil" style="color: purple;" title="Inserir"></span></a><a href=""><span class="glyphicon glyphicon-remove" style="margin-left: 10px;color: red;" title="Remover"></span></a></td>
+			</tr>
+			</tr>
+			<tr>
+				<td>2015.1TII0070</td>
+				<td>Davi de Sousa Santos</td>
+				<td>Masculino</td>
+				<td>09/03/200</td>
+				<td><a href=""><span class="glyphicon glyphicon-pencil" style="color: purple;" title="Inserir"></span></a><a href=""><span class="glyphicon glyphicon-remove" style="margin-left: 10px;color: red;" title="Remover"></span></a></td>
+			</tr>
+			</tr>
+ 		</table>
+ 		</div>
+    </div>
+
+   <script src="../bootstrap-3.3.7-dist/js/jquery.min.js"></script>
+   <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
